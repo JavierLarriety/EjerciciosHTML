@@ -1,0 +1,1 @@
+en sobremi.html no logro poner los elementos en línea, tanto los enlaces de la cabecera como la foto y la info.
