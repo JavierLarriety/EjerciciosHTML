@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+
+  <body>
+    <h1>Formularios</h1>
+    <form action="#.html" method="get">
+      <fieldset>
+        <legend>Personal information</legend>
+        <p>
+          <label for="id_name">Nombre</label>
+          <input
+            type="text"
+            name="name"
+            id="id_name"
+            autofocus
+            required
+          />
+        </p>
+        <p>
+          <label>
+            Email
+            <input type="email" name="email" id="id_email" required
+          /></label>
+        </p>
+        <p>
+          <label for="id_url">URL</label>
+          <input
+            type="url"
+            name="url"
+            id="id_url"
+            placeholder="https://github.com/usuario"
+          />
+        </p>
+        <p>
+          <label for="id_birth">Birthdate</label>
+          <input
+            type="date"
+            id="id_birth"
+            name="birthdate"
+            value="1988-07-06"
+            min="1900-01-01"
+            max="2100-01-01"
+          />
+        </p>
+        <p>
+          <label for="id_time">Choose a time for your birth</label>
+          <input
+            type="time"
+            name="time"
+            id="id_time"
+            value="19:00"
+            min="00:00"
+            max="23:59"
+          />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Work</legend>
+        <p>
+          <label for="id_meeting-time">Meeting time</label>
+          <input
+            type="datetime-local"
+            name="datetime-local"
+            id="id_meeting-time"
+            value="2022-01-31T16:30"
+            min="2022-01-30T14:00"
+            max="2022-02-15T15:00"
+          />
+        </p>
+        <p>
+          <label for="id_month">Month</label>
+          <input type="month" name="month" id="id_month" />
+        </p>
+        <p>
+          <label for="id_week">Week</label>
+          <input type="week" name="week" id="id_week" />
+        </p>
+        <p>
+          <label for="id_number">Number</label>
+          <input
+            type="number"
+            name="number"
+            id="id_number"
+            min="-10"
+            max="10"
+          />
+        </p>
+        <p>
+          <label for="id_phonenumber">Phone Number</label>
+          <input
+            type="tel"
+            name="tel"
+            id="id_phonenumber"
+            value="651631942"
+            readonly
+          />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Other data</legend>
+        <p>
+          <label for="id_search">Search</label>
+          <input type="search" name="search" id="id_search" disabled />
+        </p>
+        <p>
+          <label for="id_color">Favourite color</label>
+          <input type="color" name="color" id="id_color" />
+        </p>
+      </fieldset>
+
+      <button type="submit">Login</button>
+    </form>
+  </body>
+</html>
