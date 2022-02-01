@@ -8,27 +8,18 @@
   </head>
 
   <body>
-    <h1>Formularios</h1>
+    <header>
+      <h1>Formularios</h1>
+    </header>
     <form action="#.html" method="get">
       <fieldset>
         <legend>Personal information</legend>
-        <p>
           <label for="id_name">Nombre</label>
-          <input
-            type="text"
-            name="name"
-            id="id_name"
-            autofocus
-            required
+          <input type="text" name="name" id="id_name" autofocus required />
+          <label for="id_email">Email</label>
+          <input type="email" name="email" id="id_email" required
           />
-        </p>
-        <p>
-          <label>
-            Email
-            <input type="email" name="email" id="id_email" required
-          /></label>
-        </p>
-        <p>
+
           <label for="id_url">URL</label>
           <input
             type="url"
@@ -36,8 +27,6 @@
             id="id_url"
             placeholder="https://github.com/usuario"
           />
-        </p>
-        <p>
           <label for="id_birth">Birthdate</label>
           <input
             type="date"
@@ -47,8 +36,7 @@
             min="1900-01-01"
             max="2100-01-01"
           />
-        </p>
-        <p>
+
           <label for="id_time">Choose a time for your birth</label>
           <input
             type="time"
@@ -58,11 +46,9 @@
             min="00:00"
             max="23:59"
           />
-        </p>
       </fieldset>
       <fieldset>
         <legend>Work</legend>
-        <p>
           <label for="id_meeting-time">Meeting time</label>
           <input
             type="datetime-local"
@@ -72,16 +58,11 @@
             min="2022-01-30T14:00"
             max="2022-02-15T15:00"
           />
-        </p>
-        <p>
           <label for="id_month">Month</label>
           <input type="month" name="month" id="id_month" />
-        </p>
-        <p>
+        </main>
           <label for="id_week">Week</label>
           <input type="week" name="week" id="id_week" />
-        </p>
-        <p>
           <label for="id_number">Number</label>
           <input
             type="number"
@@ -90,8 +71,6 @@
             min="-10"
             max="10"
           />
-        </p>
-        <p>
           <label for="id_phonenumber">Phone Number</label>
           <input
             type="tel"
@@ -100,21 +79,17 @@
             value="651631942"
             readonly
           />
-        </p>
       </fieldset>
       <fieldset>
         <legend>Other data</legend>
-        <p>
           <label for="id_search">Search</label>
           <input type="search" name="search" id="id_search" disabled />
-        </p>
-        <p>
           <label for="id_color">Favourite color</label>
           <input type="color" name="color" id="id_color" />
-        </p>
       </fieldset>
 
       <button type="submit">Login</button>
     </form>
+
   </body>
 </html>
